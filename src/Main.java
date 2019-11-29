@@ -10,6 +10,10 @@ public class Main {
         kolejka.add(3);
 
         kolejka.show();
+        System.out.println("Pierwszy element w kolejce to: " + kolejka.pop());
+        System.out.println("Zdejmujemy element pierwszy");
+        kolejka.push();
+        kolejka.show();
 
 
 

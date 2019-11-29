@@ -23,6 +23,17 @@ public class Kolejka {
             ostatni = nowyElement;
         }
     }
+
+    public int pop(){
+        return pierwszy.getWartosc();
+    }
+
+    public int push(){
+        int zwracana = pierwszy.getWartosc();
+        pierwszy = pierwszy.getNastępny();
+        return zwracana;
+    }
+
     public void show(){
         Element indexElement = pierwszy;
         while (indexElement != null){
